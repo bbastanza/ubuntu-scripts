@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd ~/Setup/AppImages/"JetBrains Rider-2020.2.4"/bin/
+./rider.sh
+
+exit

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# a quicker way to restart surfshark
+
+figlet "><}}}>" -f term | lolcat -a
+sudo surfshark-vpn down
+sudo surfshark-vpn attack
+echo ""
+
+exit

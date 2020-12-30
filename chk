@@ -1,0 +1,21 @@
+#!/bin/bash
+
+
+# Check our system
+
+echo "<Stanzu System Check>"
+echo "Memory:"
+/usr/bin/free -h
+echo " "
+echo "Disk Usage:"
+/usr/bin/df -h
+echo " "
+echo "Uptime:"
+/usr/bin/uptime
+echo ""
+echo "Surfshark Status"
+sudo surfshark-vpn status
+echo ""
+sudo tlp-stat -s
+
+exit

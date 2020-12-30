@@ -1,0 +1,8 @@
+#!/bin/bash
+
+neofetch --source /home/stanzu10/Setup/themes/ASCII/penguin_sm.txt --ascii_colors 136 --disable memory cpu gpu
+
+
+
+
+exit

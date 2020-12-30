@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# This script will update the Ubuntu system.
+
+echo "<Auto-Updater>" | lolcat -a 
+sudo apt update
+sudo apt dist-upgrade
+# sudo updatedb
+sudo apt autoremove
+sudo apt autoclean
+echo "Update Complete" | lolcat -a
+echo ""
