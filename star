@@ -9,5 +9,5 @@ mtlp
 up
 tfighter
 echo ""
-figlet ".Go(x => x.For == launch);" -f term | lolcat -a -s 10
+figlet "_session.Go(x => x.For == launch);" -f term | lolcat -a -s 10
 exit
