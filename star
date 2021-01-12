@@ -3,6 +3,7 @@
 
 # this will run surfshark, tlp and up on startup
 echo ""
+sudo chmod 777 /sys/class/backlight/intel_backlight/brightness
 figlet stanzu10 -f shadow | lolcat -a -s 60
 surfstat
 mtlp
