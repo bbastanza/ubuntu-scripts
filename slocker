@@ -1,5 +1,0 @@
-!#/bin/sh
-
-exec xautolock -detectsleep -time 20 -locker slock -notifier "notify-send -t 10000 -- 'Locking in 30 seconds'" &
-
-exec xscreensaverstopperany.sh
