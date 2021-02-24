@@ -1,0 +1,37 @@
+#!/bin/sh
+
+read -p "Project Name? " NAME
+
+dotnet new sln -n $NAME
+dotnet new webapi -o API
+dotnet new classlib -o Core
+dotnet new classlib -o Infrastructure
+dotnet sln add API
+dotnet sln add Core
+dotnet sln add Infrastructure
+cd API/
+dotnet add reference ../Core
+dotnet add reference ../Infrastructure
+cd ../Infrastructure
+dotnet add reference ../Core
+cd ../
+dotnet restore
+cd API/
+rm WeatherForecast.cs Controllers/WeatherForecastController.cs
+echo ""
+echo "Removed WeatherForecast.cs and WeatherForecastController.cs"
+npx create-react-app client --template typescript
+echo ""
+cd client
+rm -rf .git
+npm install --save react-router-dom react-bootstrap bootstrap
+echo ""
+echo "Added React-Router & Bootstrap"
+cd ../../
+cp /home/stanzu10/Dev/Tools/GitIgnoreASPNET .gitignore    
+echo "Added .gitignore"
+touch README.md
+echo "Added README.md"
+echo ""
+echo "Time to start building! Please push your project to Github :)"
+
