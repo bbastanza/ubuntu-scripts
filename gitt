@@ -1,17 +1,17 @@
-#!/bin/bash
+#!/bin/sh
 
-ls /home/stanzu10/Dev/git
+ls /home/stanzu10/dev/git
 read -p "Which git directory: " FOLDER
-cd /home/stanzu10/Dev/git/$FOLDER
-git branch
-cd /home/stanzu10/Dev/git/$FOLDER
+cd /home/stanzu10/dev/git/$FOLDER
+git branch | bat 
+cd /home/stanzu10/dev/git/$FOLDER
 git add .
-git status
+git status 
 read -p "Enter commit name: " COMMIT
 read -p "Description? (press enter or add description): " DESCRIPTION
 
-git commit -m "commit $COMMIT" -m "$DESCRIPTION"  
+git commit -m "$COMMIT" -m "$DESCRIPTION"  
 git push 
-git status
+git status 
 
 exit

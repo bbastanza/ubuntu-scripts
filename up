@@ -3,10 +3,6 @@
 # This script will update the Ubuntu system.
 
 echo "<Auto-Updater>" | lolcat -a 
-sudo apt update
-sudo apt dist-upgrade
-# sudo updatedb
-sudo apt autoremove
-sudo apt autoclean
+sudo pacman -Syyu
+sudo pacman -Rcs $(pacman -Qdtq)
 echo "Update Complete" | lolcat -a
-echo ""

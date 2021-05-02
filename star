@@ -2,13 +2,12 @@
 
 
 # this will run surfshark, tlp and up on startup
-echo ""
-sudo chmod 777 /sys/class/backlight/intel_backlight/brightness
+clear
 figlet stanzu10 -f shadow | lolcat -a -s 60
-surfstat
 mtlp
-up
-tfighter
-echo ""
+sleep 2
+clear
 figlet "_session.Go(x => x.For == launch);" -f term | lolcat -a -s 10
+echo ""
+neofetch --disable memory gpu
 exit
