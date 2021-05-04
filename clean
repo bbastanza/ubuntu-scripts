@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "<Auto-Clean>" | lolcat -a 
+sudo pacman -Rcs $(pacman -Qdtq)
+echo "Clean Complete" | lolcat -a

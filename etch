@@ -1,5 +1,0 @@
-#!/bin/bash
-
-sudo /home/stanzu10/Setup/AppImages/balenaEtcher-1.5.112-x64.AppImage
-
-exit
