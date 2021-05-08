@@ -7,8 +7,6 @@ figlet stanzu10 -f shadow | lolcat -a -s 60
 sleep 1
 clear
 mtlp
-sleep 2
-clear
 neofetch --disable memory gpu
-# figlet "_session.Go(x => x.For == launch);" -f term | lolcat -a -s 10
+figlet "_session.Go(x => x.For == launch);" -f term | lolcat -a -s 10
 exit

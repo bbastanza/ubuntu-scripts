@@ -1,10 +1,10 @@
 #!/bin/sh
 
-ls /home/stanzu10/dev/git
+ls /home/stanzu10/Dev/git
 read -p "Which git directory: " FOLDER
-cd /home/stanzu10/dev/git/$FOLDER
+cd /home/stanzu10/Dev/git/$FOLDER
 git branch | bat 
-cd /home/stanzu10/dev/git/$FOLDER
+cd /home/stanzu10/Dev/git/$FOLDER
 git add .
 git status 
 read -p "Enter commit name: " COMMIT

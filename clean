@@ -2,4 +2,9 @@
 
 echo "<Auto-Clean>" | lolcat -a 
 sudo pacman -Rcs $(pacman -Qdtq)
+sleep .5
+echo "cleaned unused packages"
+sudo paccache -r
+sleep .5
+echo "cleaned paccache"
 echo "Clean Complete" | lolcat -a
