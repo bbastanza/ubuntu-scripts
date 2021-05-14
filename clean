@@ -2,6 +2,7 @@
 
 echo "<Auto-Clean>" | lolcat -a 
 sudo pacman -Rcs $(pacman -Qdtq)
+paru -Rcs $(paru -Qdtq)
 sleep .5
 echo "cleaned unused packages"
 sudo paccache -r
